@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { Nav } from "./Nav";
 
 export default function Header() {
   return (
     <div
       className="
-        w-full h-[700px] relative px-36 py-10
+        w-full h-[700px] px-10 py-10 xl:px-36 lg:py-10 
         bg-hero-pattern bg-no-repeat bg-cover bg-center
       "
     >
@@ -23,17 +24,11 @@ export default function Header() {
           />
         </section>
 
-        <nav>
-          <div
-            className="
-              flex flex-col gap-2 cursor-pointer
-            "
-          >
-            <div className="w-12 bg-white h-1 rounded-sm"></div>
-            <div className="w-12 bg-white h-1 rounded-sm"></div>
-            <div className="w-12 bg-white h-1 rounded-sm"></div>
-          </div>
-        </nav>
+        <Nav.Root>
+          <Nav.Item title="Home" url="" />
+          <Nav.Item title="Sobre Nós" url="" />
+          <Nav.Item title="Contato" url="" />
+        </Nav.Root>
       </header>
 
       <section

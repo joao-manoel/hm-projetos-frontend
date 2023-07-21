@@ -9,7 +9,7 @@ export function SectionRoot({children}: SectionRootProps) {
     <section
         className="
           w-full h-[180px] relative -top-28
-          px-36 
+          px-10 xl:px-36 
         "
       >
 
