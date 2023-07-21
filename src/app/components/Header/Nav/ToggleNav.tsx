@@ -8,7 +8,7 @@ export function ToggleNav({state, ...rest}: ToggleNav) {
     <button
       {...rest}
       className={`
-        ${state? 'bg-white z-30 absolute top-12 right-12' : ''}
+        ${state? 'bg-white z-30 absolute top-12 right-12' : 'relative z-0'}
         flex-col gap-2 cursor-pointer flex md:hidden
         w-14 h-14 items-center justify-center
       `}
@@ -16,7 +16,7 @@ export function ToggleNav({state, ...rest}: ToggleNav) {
       <div className={`
         transition
         w-12 bg-white h-1 rounded-sm
-        ${state ? 'rotate-45 translate-y-1 bg-zinc-700' : ''}
+        ${state && 'rotate-45 translate-y-1 bg-zinc-700'}
       `}></div>
       <div className={`
         ${state ? 'hidden' : ''}
@@ -25,7 +25,7 @@ export function ToggleNav({state, ...rest}: ToggleNav) {
       <div className={`
         transition
         w-12 bg-white h-1 rounded-sm
-        ${state ? '-rotate-45 -translate-y-2 bg-zinc-700' : ''}
+        ${state && '-rotate-45 -translate-y-2 bg-zinc-700'}
       `}></div>
     </button>
   )

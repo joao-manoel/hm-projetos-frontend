@@ -10,7 +10,7 @@ export function NavItem({title, url}: NavItemProps) {
     <Link href={url}>
       <li
         className="
-          font-bold hover:underline
+          font-bold hover:underline text-xl md:text-md
         "
       >{title}</li>
     </Link>
