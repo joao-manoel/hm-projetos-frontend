@@ -1,18 +1,24 @@
 import Link from "next/link";
+import { ElementType } from 'react';
 
 interface NavItemProps {
   title: string
   url: string
+  Icon: ElementType
 }
 
-export function NavItem({title, url}: NavItemProps) {
+export function NavItem({title, url, Icon}: NavItemProps) {
   return (
     <Link href={url}>
       <li
         className="
-          font-bold hover:underline text-xl md:text-md
+          flex items-center gap-2
+          font-bold border-b-2 border-transparent hover:border-zinc-200 text-xl md:text-md transition
         "
-      >{title}</li>
+      >
+        <Icon />
+        <span>{title}</span>
+      </li>
     </Link>
   )
 }

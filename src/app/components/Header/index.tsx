@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { AiOutlineHome, AiOutlinePhone } from 'react-icons/ai';
+import { PiProjectorScreenLight } from 'react-icons/pi';
 import { Nav } from "./Nav";
 
 export default function Header() {
@@ -25,9 +27,9 @@ export default function Header() {
         </section>
 
         <Nav.Root>
-          <Nav.Item title="Home" url="" />
-          <Nav.Item title="Sobre Nós" url="" />
-          <Nav.Item title="Contato" url="" />
+          <Nav.Item title="Home" url="" Icon={AiOutlineHome}/>
+          <Nav.Item title="Sobre Nós" url="" Icon={PiProjectorScreenLight} />
+          <Nav.Item title="Contato" url="" Icon={AiOutlinePhone} />
         </Nav.Root>
       </header>
 
