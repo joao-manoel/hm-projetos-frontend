@@ -8,7 +8,7 @@ export function ToggleNav({state, ...rest}: ToggleNav) {
     <button
       {...rest}
       className={`
-        ${state? 'bg-white z-30 absolute top-12 right-12' : 'relative z-0'}
+        ${state? 'bg-white z-30 absolute top-12 right-12' : 'relative z-0 top-0 right-0'}
         flex-col gap-2 cursor-pointer flex md:hidden
         w-14 h-14 items-center justify-center
       `}
