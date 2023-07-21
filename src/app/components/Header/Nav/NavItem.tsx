@@ -14,6 +14,7 @@ export function NavItem({title, url, Icon}: NavItemProps) {
         className="
           flex items-center gap-2
           font-bold border-b-2 border-transparent hover:border-zinc-200 text-xl md:text-md transition
+          w-fit
         "
       >
         <Icon />

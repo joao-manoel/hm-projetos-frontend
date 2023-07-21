@@ -7,28 +7,28 @@ interface SectionRootProps {
 export function SectionRoot({children}: SectionRootProps) {
   return (
     <section
+      className="
+        w-full h-[180px] relative -top-28
+        px-10 xl:px-36  hidden md:flex
+      "
+    >
+
+      <div
         className="
-          w-full h-[180px] relative -top-28
-          px-10 xl:px-36 
+          w-full h-full
+        bg-white  rounded-3xl shadow-lg 
         "
       >
-
-        <div
+        <ul
           className="
-           w-full h-full
-          bg-white  rounded-3xl shadow-lg 
+            overflow-hidden
+            h-full
+            flex justify-around items-center
           "
         >
-          <ul
-          className="
-              overflow-hidden
-              h-full
-              flex justify-around items-center
-            "
-        >
           {children}
-          </ul>
-        </div>
-      </section>
+        </ul>
+      </div>
+    </section>
   )
 }
