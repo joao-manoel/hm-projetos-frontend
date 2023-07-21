@@ -16,7 +16,7 @@ export function ToggleNav({state, ...rest}: ToggleNav) {
       <div className={`
         transition
         w-12 bg-white h-1 rounded-sm
-        ${state ? 'rotate-45 translate-y-1 bg-black' : ''}
+        ${state ? 'rotate-45 translate-y-1 bg-zinc-700' : ''}
       `}></div>
       <div className={`
         ${state ? 'hidden' : ''}
@@ -25,7 +25,7 @@ export function ToggleNav({state, ...rest}: ToggleNav) {
       <div className={`
         transition
         w-12 bg-white h-1 rounded-sm
-        ${state ? '-rotate-45 -translate-y-2 bg-black' : ''}
+        ${state ? '-rotate-45 -translate-y-2 bg-zinc-700' : ''}
       `}></div>
     </button>
   )
